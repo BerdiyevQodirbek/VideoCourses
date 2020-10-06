@@ -1,0 +1,63 @@
+.examIsOpen ~ #exams {
+    position: fixed;
+    right: 0;
+    top: 62px;
+    background: white;
+    width: 20%;
+    height: 100%;
+    z-index: 2;
+}
+
+.examIsClose ~ #exams {
+    display: none;
+}
+
+#closeExam{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #f4f6f8;
+    color: #8f8f8f;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+#profile {
+    padding: 20% 10% 10%;
+    text-align: center;
+}
+
+#profile img {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    object-fit: cover;
+}
+
+#profile-edite-btn {
+    background: #f4f6f8;
+    color: #bdbdbe;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 7px 0;
+    position: absolute;
+    top: 125px;
+    right: 50px;
+}
+
+#courses small {
+    padding-left: 20px;
+}
+
+#courses ul {
+    padding: 0;
+    border-top: 1px solid #f4f6f8;
+}
+

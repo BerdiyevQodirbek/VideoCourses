@@ -1,0 +1,38 @@
+#courses li {
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid #f4f6f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-data h5 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.classAttempt {
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    outline: none;
+    cursor: pointer;
+    color: #729cff;
+    background-color: #e6eeff;
+    box-shadow: 0 0 1px;
+    height: 20px;
+}
+
+.classAttempt:active {
+    color: #e6eeff;
+    background: #729cff;
+}
+
+.course-settings {
+    border: none;
+    background: transparent;
+    color: #cccccc;
+    outline: none;
+    cursor: pointer;
+}

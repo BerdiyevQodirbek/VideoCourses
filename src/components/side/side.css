@@ -1,0 +1,94 @@
+.closeSide {
+    position: fixed;
+    background: #2e3266;
+    left: 0;
+    width: 50px;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 20;
+    transition: 0.1s;
+}
+
+.openSide {
+    position: fixed;
+    background: #2e3266;
+    left: 0;
+    width: 200px;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 20;
+    transition: 0.1s;
+
+}
+
+#logo {
+    padding: 0 0 3rem 1rem;
+}
+
+#logo a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-right: 12%;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    color: white;
+}
+#links {
+    padding: 0 0 0 1rem;
+    margin: 0;
+    font-size: 16px;
+}
+
+#links li {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+#links a {
+    text-decoration: none;
+}
+
+#links li:hover a {
+    text-decoration: none;
+    color: white;
+}
+
+/* #links a:active {
+    color: #00137d;
+} */
+
+#links li:hover {
+    cursor: pointer;
+    border-right: 3px solid white;
+}
+
+#links span {
+    margin-right: 1.1rem;
+}
+
+#language {
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #language button {
+    margin:  0 10px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#language img {
+    width: 100%;
+} */
