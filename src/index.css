@@ -3,8 +3,8 @@
 }
 body {
   margin: 0;
-  font-family: Montserrat;
-  background: #f8f8f8;
+  font-family: Poppins;
+  background: #ffffff;
 }
 
 code {
@@ -13,5 +13,5 @@ code {
 }
 
 .light {
-  color: #99a1a7;
+  color: #969DA7;
 }

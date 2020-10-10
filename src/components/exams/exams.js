@@ -1,6 +1,6 @@
 import React from 'react'
 import './exams.css'
-import Tests from '../exTests/exTests'
+import Tests from './exTests/exTests'
 
 const Exams = () => {
     return (

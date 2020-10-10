@@ -8,6 +8,8 @@
     box-shadow: 0 0 10px#dde1e4;
     z-index: 10;
     transition: 0.1s;
+    position: sticky;
+    top: 0;
 }
 .openSide + header {
     display: flex;
@@ -19,6 +21,8 @@
     box-shadow: 0 0 10px#dde1e4;
     z-index: 10;
     transition: 0.1s;
+    position: sticky;
+    top: 0;
 }
  header > div {
     text-align: center;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from './links/links'
 import './side.css'
 
 class Side extends Component {
@@ -24,48 +25,13 @@ class Side extends Component {
                  </h2>
                 <div>
                     <ul id="links">
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-home"></span>
-                            {isOpen && ('Home')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-chart-bars"></span>
-                            {isOpen && ('Dashboard')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-film-play"></span>
-                            {isOpen && ('Courses')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-layers"></span>
-                            {isOpen && ('Assignments')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-pencil"></span>
-                            {isOpen && ('Exams')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-license"></span>
-                            {isOpen && ('Results')}
-                            </a>
-                        </li>
-                        <li>
-                            <a href='#link' className='light'>
-                            <span className="lnr lnr-cog"></span>
-                            {isOpen && ('Settings')}
-                            </a>
-                        </li>
+                        <Link Url='#Home' iconClass="lnr lnr-home" link={isOpen && ('Home')} />
+                        <Link Url='#Dashboard' iconClass="lnr lnr-chart-bars" link={isOpen && ('Dashboard')} />
+                        <Link Url='#Courses' iconClass="lnr lnr-film-play" link={isOpen && ('Courses')} />
+                        <Link Url='#Assignments' iconClass="lnr lnr-layers" link={isOpen && ('Assignments')} />
+                        {/* <Link Url='#Exams' iconClass="lnr lnr-pencil" link={isOpen && ('Exams')} /> */}
+                        {/* <Link Url='#Result' iconClass="lnr lnr-license" link={isOpen && ('Results')} /> */}
+                        <Link Url='#Settings' iconClass="lnr lnr-cog" link={isOpen && ('Settings')} />
                     </ul>
                 </div>
                 <div id='language'>

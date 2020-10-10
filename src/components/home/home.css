@@ -1,0 +1,229 @@
+.closeSide ~ #home-section {
+    margin-left: 50px;
+    padding: 0 20px;
+    display: flex;
+    height: 100vh;
+}
+
+.openSide ~ #home-section {
+    margin-left: 200px;
+    padding: 0 20px;
+    display: flex;
+    height: 100vh;
+}
+
+.closeSide ~ #home-section > div:first-child {
+    width: 60%;
+    padding: 25px;
+    transition: 0.1s;
+}
+
+.openSide ~ #home-section > div:first-child {
+    width: 55%;
+    padding: 25px;
+    transition: 0.1s;
+
+}
+
+#home-section > div:last-child {
+    width: 40%;
+    padding: 25px 20px 10px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+#home-profile {
+    width: 100%;
+    height: 280px;
+}
+
+#hello-profile {
+    height: 160px;
+    background-color: #F5F5F7;
+    border-radius: 14px;
+    display: flex;
+    padding: 20px;
+}
+
+#hello-profile h2 {
+    margin: 5px;
+}
+
+#hello-profile > div {
+    width: 50%;
+}
+
+#hello-profile > div:last-child {
+    text-align: center;
+}
+
+#hello-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 16.04px;
+    left: 576.54px;
+    border-radius: 14px;
+}
+
+#own-courses {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#own-course-handler {
+    width: 16%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#own-course-handler button {
+    font-size: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#home-courses-link a {
+    color: #b9b9b9;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#home-courses-link a:active {
+    color: black;
+}
+
+
+#home-courses ul {
+    padding: 0;
+}
+
+
+.course-comment {
+    font-size: 14px;
+    color: #969DA7;
+}
+
+.course-viewer {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    color: #0068FF;
+    border: 2px solid;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.course-viewer:hover {
+    box-shadow: 0px 0px 2px #0068ff;
+}
+
+/* home right side */
+
+#home-total-courses {
+    width: 100%;
+    height: 160px;
+}
+
+#home-total-courses > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#home-total-courses > div:last-child > div {
+    display: flex;
+    width: calc(50% - 15px);
+    background: #F5F5F7;
+    border-radius: 14px;
+    padding: 6px 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#home-total-courses > div:last-child > div p {
+    width: 50%;
+}
+
+.home-search {
+    display: flex;
+    width: 85%;
+    height: 40px;
+    border-radius: 8px;
+    background: #F5F5F7;
+}
+
+.home-search button, #home-notification, #home-user {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.home-search button {
+    line-height: 42px;
+}
+
+#home-notification {
+    font-size: 20px;
+}
+
+.home-search input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#home-user img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.home-courses-number {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#home-statistics {
+    padding: 15px 0;
+}
+
+#home-statistics div {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#home-statistics select {
+    margin-left: auto;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+}
+
+#home-statistics a {
+    text-decoration: none;
+    color: #969DA7;
+    margin-right: 20px;
+}
+
+#home-statistics a:active {
+    color: black;
+}
+
+#home-statistics img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}

@@ -33,7 +33,7 @@ class Card extends Component {
                         <p><span className="lnr lnr-user"></span> {this.props.members}</p>
                     </div>
                     <div>
-                        <button onClick={this.goToVideo} className='classAttempt'>Start</button>
+                        <button onClick={this.goToVideo} className='course-view'>View</button>
                         <p className="course-fame">
                             <span className="lnr lnr-star"></span>
                             <span className="lnr lnr-star"></span>
@@ -43,7 +43,7 @@ class Card extends Component {
                         </p>
                     </div>
                     <div>
-                        <p>{this.props.teacher}</p>
+                        <h5>{this.props.teacher}</h5>
                         <p className="course-price">{this.props.price}</p>
                     </div>
                 </div>

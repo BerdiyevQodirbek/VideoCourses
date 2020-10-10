@@ -14,7 +14,7 @@ class List extends Component {
                     <img src={this.props.URL} alt={this.props.name}/>
                 </td>
                 <td>
-                    <h3>{this.props.name}</h3>
+                    <p>{this.props.name}</p>
                 </td>
                 <td>
                     <p>{this.props.teacher}</p>
@@ -26,7 +26,7 @@ class List extends Component {
                     <p className="course-price">{this.props.price}</p>
                 </td>
                 <td>
-                    <button onClick={this.goToVideo} className='classAttempt'>Start</button>
+                    <button onClick={this.goToVideo} className='classAttempt'>View</button>
                 </td>
             </tr>
         )

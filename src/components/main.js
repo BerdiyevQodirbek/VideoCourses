@@ -5,6 +5,7 @@ import Exams from './exams/exams'
 import PreHeader from './preHeader/preHeader'
 import CardCourses from './courses/CardCourses/CardCourses'
 import ListCourses from './courses/ListCourses/ListCourses'
+import Home from './home/home'
 import './main.css'
 
 class Main extends Component {
@@ -26,12 +27,13 @@ class Main extends Component {
         return(
             <>
                 <main>
-                    <Side />
+                    <Home />
+                    {/* <Side />
                     <Header />
                     <Exams />
                     <PreHeader listHandler={this.listChanger} cardHandler={this.cardChanger}/>
                     {card ? <CardCourses />
-                    : <ListCourses />}
+                    : <ListCourses />} */}
                 </main>
             </>
         )
