@@ -15,7 +15,7 @@ class Home extends Component {
                         <div id='home-profile'>
                             <div id='hello-profile'>
                                 <div>
-                                    <h2>Hey Dinoza Mahkamova</h2>
+                                    <h2>Hey Dilnoza Mahkamova</h2>
                                     <p className='light'>It`s good to see you again</p>
                                 </div>
                                 <div>
@@ -105,8 +105,8 @@ class Home extends Component {
                         <div id='home-statistics'>
                             <p>Your statistics</p>
                             <div>
-                                <a href="">Learning hours</a>
-                                <a href="">My courses</a>
+                                <a href="#home">Learning hours</a>
+                                <a href="#home">My courses</a>
                                 <select name="" id="">
                                     <option value="">Weekly</option>
                                     <option value="">Monthly</option>

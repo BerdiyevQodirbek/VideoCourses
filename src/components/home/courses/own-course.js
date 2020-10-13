@@ -10,7 +10,7 @@ class OwnCourses extends Component {
                     <p><b>{this.props.name}</b></p>
                     <p className='light'>{this.props.comment}</p>
                 </div>
-                <button>Continue</button>
+                <button className='continue-btn'>Continue</button>
             </div>
         )
     }

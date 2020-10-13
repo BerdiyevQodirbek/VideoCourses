@@ -1,4 +1,4 @@
-tr {
+/* tr {
     text-align: center;
 }
 
@@ -22,4 +22,39 @@ tr:nth-child(even) {
     width: 70px;
     padding-left: 10px;
     line-height: 8px;
+} */
+
+
+#listCourses li {
+    list-style: none;
+    width: 100%;
+    height: 80px;
+    border-radius: 14px;
+    background: #F5F5F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 1rem;
+}
+
+#listCourses li img {
+    height: 64px;
+    width: 64px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.course-duration i {
+    color: orange;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.progress_svg__2yWLo > text{
+    font-size: 50px;
+}
+
+#listCourses li >div {
+    min-width: 10%;
 }
