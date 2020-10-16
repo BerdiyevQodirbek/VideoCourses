@@ -1,17 +1,15 @@
 import React, {Component} from "react"
 
 
-class Link extends Component {
+class Li extends Component {
     render() {
         return(
-            <li>
-                <a href={this.props.Url} className='light'>
-                    <span className={this.props.iconClass}></span>
-                    {this.props.link}
-                </a>
+            <li className='light'>
+                <span className={this.props.iconClass}></span>
+                {this.props.link}
             </li>
         )
     }
 }
 
-export default Link;
+export default Li;

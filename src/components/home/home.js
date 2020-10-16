@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Side from '../side/side'
+import Side from '../side/Side'
 import List from "./courses/course-list"
 import Suggested from "./courses/suggested"
 import OwnCourse from "./courses/own-course";
@@ -105,8 +105,8 @@ class Home extends Component {
                         <div id='home-statistics'>
                             <p>Your statistics</p>
                             <div>
-                                <a href="#home">Learning hours</a>
-                                <a href="#home">My courses</a>
+                                <p href="#home">Learning hours</p>
+                                <p href="#home">My courses</p>
                                 <select name="" id="">
                                     <option value="">Weekly</option>
                                     <option value="">Monthly</option>

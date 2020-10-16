@@ -66,6 +66,7 @@
 
 #links li:hover {
     cursor: pointer;
+    color: white;
     border-right: 3px solid white;
 }
 

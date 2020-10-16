@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Link from './links/links'
+import {Link} from "react-router-dom"
+import Li from './Links/Links'
 import './side.css'
 
 class Side extends Component {
@@ -25,13 +26,17 @@ class Side extends Component {
                  </h2>
                 <div>
                     <ul id="links">
-                        <Link Url='#Home' iconClass="lnr lnr-home" link={isOpen && ('Home')} />
-                        <Link Url='#Dashboard' iconClass="lnr lnr-chart-bars" link={isOpen && ('Dashboard')} />
-                        <Link Url='#Courses' iconClass="lnr lnr-film-play" link={isOpen && ('Courses')} />
-                        <Link Url='#Assignments' iconClass="lnr lnr-layers" link={isOpen && ('Assignments')} />
-                        {/* <Link Url='#Exams' iconClass="lnr lnr-pencil" link={isOpen && ('Exams')} /> */}
-                        {/* <Link Url='#Result' iconClass="lnr lnr-license" link={isOpen && ('Results')} /> */}
-                        <Link Url='#Settings' iconClass="lnr lnr-cog" link={isOpen && ('Settings')} />
+                        <Link to='/home'>
+                            <Li iconClass="lnr lnr-home" link={isOpen && ('Home')} />
+                        </Link>
+                        <Li iconClass="lnr lnr-chart-bars" link={isOpen && ('Dashboard')} />
+                        <Link to='/courses'>
+                            <Li iconClass="lnr lnr-film-play" link={isOpen && ('Courses')} />
+                        </Link>
+                        <Li iconClass="lnr lnr-layers" link={isOpen && ('Assignments')} />
+                        {/* <Li Url='#Exams' iconClass="lnr lnr-pencil" link={isOpen && ('Exams')} /> */}
+                        {/* <Li Url='#Result' iconClass="lnr lnr-license" link={isOpen && ('Results')} /> */}
+                        <Li iconClass="lnr lnr-cog" link={isOpen && ('Settings')} />
                     </ul>
                 </div>
                 <div id='language'>

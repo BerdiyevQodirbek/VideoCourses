@@ -2,13 +2,7 @@ import React, { Component } from "react"
 import './preHeader.css'
 
 class PreHeader extends Component {
-    // constructor(props) {
-    //     super(props);
-    // }
-
-
     render () {
-        // const {card, list} = this.state;
         return(
             <div id="preHeader">
                 <div id='course-category'>

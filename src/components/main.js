@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import Side from './side/side'
+import {
+    BrowserRouter,
+    Switch,
+    Route,
+    // Link
+} from 'react-router-dom'
+import Side from './side/Side'
 import Header from './header/header'
 import Exams from './exams/exams'
 import PreHeader from './preHeader/preHeader'
 import CardCourses from './courses/CardCourses/CardCourses'
 import ListCourses from './courses/ListCourses/ListCourses'
-// import Home from './home/home'
+import Home from './home/home'
 import './main.css'
 
 class Main extends Component {
@@ -25,17 +31,29 @@ class Main extends Component {
     render() {
         const {card} = this.state
         return(
-            <>
+            <BrowserRouter>
                 <main>
                     {/* <Home /> */}
                     <Side />
-                    <Header />
+                    {/* <Header />
                     <Exams />
                     <PreHeader listHandler={this.listChanger} cardHandler={this.cardChanger}/>
                     {card ? <CardCourses />
-                    : <ListCourses />}
+                    : <ListCourses />} */}
+                    <Switch>
+                        <Route path='/courses'>
+                            <Header />
+                            <Exams />
+                            <PreHeader listHandler={this.listChanger} cardHandler={this.cardChanger}/>
+                            {card ? <CardCourses />
+                            : <ListCourses />}
+                        </Route>
+                        <Route path='/home'>
+                            <Home />
+                        </Route>
+                    </Switch>
                 </main>
-            </>
+            </BrowserRouter>
         )
     }
     
