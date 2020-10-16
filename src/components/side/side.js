@@ -26,17 +26,18 @@ class Side extends Component {
                  </h2>
                 <div>
                     <ul id="links">
-                        <Link to='/home'>
+                        <Link to='/'>
                             <Li iconClass="lnr lnr-home" link={isOpen && ('Home')} />
                         </Link>
-                        <Li iconClass="lnr lnr-chart-bars" link={isOpen && ('Dashboard')} />
+                        <Link to='/dashboard'>
+                            <Li iconClass="lnr lnr-chart-bars" link={isOpen && ('Dashboard')} />
+                        </Link>
                         <Link to='/courses'>
                             <Li iconClass="lnr lnr-film-play" link={isOpen && ('Courses')} />
                         </Link>
-                        <Li iconClass="lnr lnr-layers" link={isOpen && ('Assignments')} />
-                        {/* <Li Url='#Exams' iconClass="lnr lnr-pencil" link={isOpen && ('Exams')} /> */}
-                        {/* <Li Url='#Result' iconClass="lnr lnr-license" link={isOpen && ('Results')} /> */}
-                        <Li iconClass="lnr lnr-cog" link={isOpen && ('Settings')} />
+                        <Link to='/settings'>
+                            <Li iconClass="lnr lnr-cog" link={isOpen && ('Settings')} />
+                        </Link>
                     </ul>
                 </div>
                 <div id='language'>

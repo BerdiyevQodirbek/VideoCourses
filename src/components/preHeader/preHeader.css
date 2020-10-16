@@ -14,6 +14,16 @@
     transition: 0.1s;
 }
 
+#preHeader_courseType a {
+    text-decoration: none;
+    margin-right: 1.5rem;
+    color: #969DA7
+}
+
+#preHeader_courseType a:active {
+    color: black;
+}
+
 #course-category select {
     background: transparent;
     border: none;

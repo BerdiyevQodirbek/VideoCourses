@@ -78,11 +78,11 @@
 #own-course-handler {
     width: 16%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #own-course-handler button {
-    font-size: 40px;
+    font-size: 35px;
     background: transparent;
     border: none;
     outline: none;
@@ -202,7 +202,9 @@
 
 #home-statistics div {
     display: flex;
-    margin-bottom: 1rem;
+    height: 22px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
 }
 
 #home-statistics select {
@@ -213,9 +215,12 @@
 }
 
 #home-statistics p {
+    margin-bottom: 0.5rem;
     text-decoration: none;
     color: #969DA7;
+    margin: 0;
     margin-right: 20px;
+    padding: 0;
 }
 
 #home-statistics p:active {

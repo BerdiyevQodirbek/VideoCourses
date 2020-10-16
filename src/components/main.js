@@ -6,6 +6,8 @@ import {
     // Link
 } from 'react-router-dom'
 import Side from './side/Side'
+import Settings from './Settings/Settings'
+import Dashboard from './Dashboard/Dashboard'
 import Header from './header/header'
 import Exams from './exams/exams'
 import PreHeader from './preHeader/preHeader'
@@ -27,19 +29,13 @@ class Main extends Component {
     listChanger = () => {
         this.setState({card: false, list: true})
     }
-    
+
     render() {
         const {card} = this.state
         return(
             <BrowserRouter>
                 <main>
-                    {/* <Home /> */}
                     <Side />
-                    {/* <Header />
-                    <Exams />
-                    <PreHeader listHandler={this.listChanger} cardHandler={this.cardChanger}/>
-                    {card ? <CardCourses />
-                    : <ListCourses />} */}
                     <Switch>
                         <Route path='/courses'>
                             <Header />
@@ -48,7 +44,13 @@ class Main extends Component {
                             {card ? <CardCourses />
                             : <ListCourses />}
                         </Route>
-                        <Route path='/home'>
+                        <Route path='/dashboard'>
+                            <Dashboard />
+                        </Route>
+                        <Route path='/Settings'>
+                            <Settings />
+                        </Route>
+                        <Route path='/'>
                             <Home />
                         </Route>
                     </Switch>
@@ -58,6 +60,8 @@ class Main extends Component {
     }
     
 }
+
+
 
 
 export default Main;
