@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import Side from '../side/Side'
 import List from "./courses/course-list"
 import Suggested from "./courses/suggested"
 import OwnCourse from "./courses/own-course";
@@ -9,7 +8,6 @@ class Home extends Component {
     render () {
         return (
             <>
-                <Side />
                 <div id="home-section">
                     <div>
                         <div id='home-profile'>

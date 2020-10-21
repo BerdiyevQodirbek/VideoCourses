@@ -22,7 +22,9 @@ class Side extends Component {
                     <button id='expandSideBar' onClick={this.expand}>
                         <span className="lnr lnr-menu"></span>
                     </button>
-                    <a href='https://alitech.uz/' target='blank'>{isOpen && ('Alitech')}</a>
+                    {isOpen && (
+                        <a href='https://alitech.uz/' target='blank'><img src='https://alitech.uz/wp-content/uploads/2020/04/logo-full.svg' alt='Alitech' /></a>
+                    )}
                  </h2>
                 <div>
                     <ul id="links">
@@ -37,6 +39,9 @@ class Side extends Component {
                         </Link>
                         <Link to='/settings'>
                             <Li iconClass="lnr lnr-cog" link={isOpen && ('Settings')} />
+                        </Link>
+                        <Link to='/sign'>
+                            <Li iconClass="fas fa-sign-out-alt" link={isOpen && ('Log Out')} />
                         </Link>
                     </ul>
                 </div>

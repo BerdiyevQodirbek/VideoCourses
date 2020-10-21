@@ -14,6 +14,8 @@ import PreHeader from './preHeader/preHeader'
 import CardCourses from './courses/CardCourses/CardCourses'
 import ListCourses from './courses/ListCourses/ListCourses'
 import Home from './home/home'
+import SignUp from './Sign/Sign'
+import Overview from './courses/Overview/Overview'
 import './main.css'
 
 class Main extends Component {
@@ -35,22 +37,33 @@ class Main extends Component {
         return(
             <BrowserRouter>
                 <main>
-                    <Side />
                     <Switch>
                         <Route path='/courses'>
+                            <Side />
                             <Header />
                             <Exams />
                             <PreHeader listHandler={this.listChanger} cardHandler={this.cardChanger}/>
-                            {card ? <CardCourses />
+                            {card 
+                            ? <CardCourses />
                             : <ListCourses />}
                         </Route>
                         <Route path='/dashboard'>
+                            <Side />
                             <Dashboard />
                         </Route>
                         <Route path='/Settings'>
+                            <Side />
                             <Settings />
                         </Route>
+                        <Route path='/sign'>
+                            <SignUp />
+                        </Route>
+                        <Route path='/courses/overview'>
+                            <Side />
+                            <Overview />
+                        </Route>
                         <Route path='/'>
+                            <Side />
                             <Home />
                         </Route>
                     </Switch>

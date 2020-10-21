@@ -30,6 +30,11 @@
     text-decoration: none;
 }
 
+#logo img {
+    width: 50%;
+    position: absolute;
+}
+
 #logo button {
     background: transparent;
     border: none;
@@ -49,6 +54,13 @@
 #links li {
     list-style: none;
     padding: 1rem 0;
+    outline: none;
+}
+
+#links a:last-child {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
 
 #links a {
@@ -93,3 +105,4 @@
 #language img {
     width: 100%;
 } */
+

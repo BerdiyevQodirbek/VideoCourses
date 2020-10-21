@@ -1,0 +1,20 @@
+h1 {
+    margin: 100px 40%;
+    padding-top: 105px;
+    font-size: 50px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    animation: pulse 1s infinite;
+    text-align: center;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 white;
+    }
+    100% {
+        box-shadow: 0 0 0 30px lightgrey;
+    }
+}
