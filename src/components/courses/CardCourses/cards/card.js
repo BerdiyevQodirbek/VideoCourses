@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom';
 import './card.css'
 
 class Card extends Component {
@@ -9,10 +10,6 @@ class Card extends Component {
 
     markHandler = () => {
         this.setState(prevState => ({mark: !prevState.mark}));
-    }
-
-    goToVideo = () => {
-        window.open('https://www.youtube.com/c/Alitechacademy/playlists', '_blank');
     }
 
     render() {
@@ -33,7 +30,9 @@ class Card extends Component {
                         <p><span className="lnr lnr-user"></span> {this.props.members}</p>
                     </div>
                     <div>
-                        <button onClick={this.goToVideo} className='course-view'>View</button>
+                        <Link to='/courses/overview'>
+                            <button className='course-view'>View</button>
+                        </Link>
                         <p className="course-fame">
                             <span className="lnr lnr-star"></span>
                             <span className="lnr lnr-star"></span>

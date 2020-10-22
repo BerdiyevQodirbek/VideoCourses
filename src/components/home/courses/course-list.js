@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 import './list-style.css'
 
 class List extends Component {
@@ -13,7 +14,9 @@ class List extends Component {
                     </div>
                     <p className='home-courses-duration'>6h 30min</p>
                     <p className='course-duration'>4.8</p>
-                    <button className='course-viewer'>View course</button>
+                    <Link to='/courses/overview'>
+                        <button className='course-viewer'>View course</button>
+                    </Link>
                 </li>
             </>
         )
