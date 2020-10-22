@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import {
     BrowserRouter,
     Switch,
-    Route,
-    // Link
+    Route
 } from 'react-router-dom'
 import Side from './side/Side'
 import Settings from './Settings/Settings'
@@ -38,7 +37,7 @@ class Main extends Component {
             <BrowserRouter>
                 <main>
                     <Switch>
-                        <Route path='/courses'>
+                        <Route exact path='/courses'>
                             <Side />
                             <Header />
                             <Exams />
@@ -47,22 +46,22 @@ class Main extends Component {
                             ? <CardCourses />
                             : <ListCourses />}
                         </Route>
-                        <Route path='/dashboard'>
+                        <Route exact path='/dashboard'>
                             <Side />
                             <Dashboard />
                         </Route>
-                        <Route path='/Settings'>
+                        <Route exact path='/Settings'>
                             <Side />
                             <Settings />
                         </Route>
-                        <Route path='/sign'>
+                        <Route exact path='/sign'>
                             <SignUp />
                         </Route>
-                        <Route path='/courses/overview'>
+                        <Route exact path='/courses/overview'>
                             <Side />
                             <Overview />
                         </Route>
-                        <Route path='/'>
+                        <Route exact path='/'>
                             <Side />
                             <Home />
                         </Route>

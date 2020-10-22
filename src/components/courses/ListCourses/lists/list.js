@@ -11,6 +11,7 @@ class List extends Component {
     }
 
     render() {
+        
         return(
             <li>
                 <img src={this.props.URL} alt={this.props.name}/>
